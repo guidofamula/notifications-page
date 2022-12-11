@@ -28,9 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-- Desktop Version ![Desktop Version](./src/assets/screenshots/notifications-page-desktop.png)
+Desktop Version
 
-- Mobile Version ![Mobile Version](./src/assets/screenshots/notifications-page-mobile.png)
+![Desktop Version](./src/assets/screenshots/notifications-page-desktop.png)
+
+Mobile Version
+
+![Mobile Version](./src/assets/screenshots/notifications-page-mobile.png)
 
 ### Links
 
