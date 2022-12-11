@@ -1,0 +1,91 @@
+import AvatarNotif from "./AvatarNotif";
+import PrivateMessage from "./PrivateMessage";
+import {
+  AvatarAngelaGray,
+  AvatarAnnaKim,
+  AvatarJacobThompson,
+  AvatarKimberlySmith,
+  AvatarMarkWebber,
+  AvatarNathanPeterson,
+  AvatarRizkyHasanuddin,
+  ImageChess,
+} from "../assets/IndexImages";
+
+const CardAvatar = () => {
+  return (
+    <div className='flex justify-center flex-col space-y-3'>
+      <AvatarNotif
+        srcAvatar={AvatarMarkWebber}
+        name='Mark Webber '
+        altAvatar='Mark Webber Avatar'
+        about='reacted to your recent posts '
+        destiny='My first tournament today! '
+        status=' 🔴 '
+        time='1m ago'
+      />
+      <AvatarNotif
+        srcAvatar={AvatarAngelaGray}
+        name='Angela Gray '
+        altAvatar='Angela Gray Avatar'
+        about='followed you '
+        status=' 🔴 '
+        time='5m ago'
+      />
+      <AvatarNotif
+        classAbout='text-primary-blue font-bold cursor-pointer'
+        srcAvatar={AvatarJacobThompson}
+        name='Jacob Thompson '
+        altAvatar='Jacob Thompson Avatar'
+        about='has joined your group '
+        status=' 🔴 '
+        destiny='Chess Club '
+        time='1 day ago'
+      />
+      <AvatarNotif
+        classCard='flex flex-col md:flex-row md:max-w-xl rounded-md bg-netral-white p-2 shadow-none'
+        srcAvatar={AvatarRizkyHasanuddin}
+        name='Rizky Hasanuddin '
+        altAvatar='Rizky Hasanuddin Avatar'
+        about='sent you a private message '
+        time='1 day ago'
+        children={
+          <PrivateMessage
+            pm="Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        I'm already having lots of fun and improving my game."
+          />
+        }
+      />
+      <AvatarNotif
+        classCard='flex flex-col md:flex-row md:max-w-xl w-[500px] rounded-md bg-netral-white p-2 shadow-none'
+        srcAvatar={AvatarKimberlySmith}
+        name='Kimberly Smith '
+        altAvatar='Kimberly Smith Avatar'
+        about='commented on your picture '
+        time='1weeks ago'
+        imageCommented={ImageChess}
+      />
+      <AvatarNotif
+        classCard='flex flex-col w-[520px] md:flex-row md:max-w-xl rounded-md bg-netral-white p-2'
+        classABout='text-netral-d-g-blue font-bold ease-in-out duration-150 hover:text-primary-blue cursor-pointer'
+        srcAvatar={AvatarNathanPeterson}
+        name='Nathan Peterson '
+        altAvatar='Nathan Peterson Avatar'
+        about='reacted to your recent post '
+        destiny='5 end-game strategies to increase your win rate '
+        time='2 weeks ago'
+      />
+      <AvatarNotif
+        classCard='flex flex-col md:flex-row md:max-w-xl w-[500px] rounded-md bg-netral-white p-2 shadow-none'
+        classAbout='text-netral-v-d-blue ease-in-out duration-150 hover:text-primary-blue cursor-pointer font-medium cursor-pointer'
+        srcAvatar={AvatarAnnaKim}
+        name='Anna Kim '
+        altAvatar='Anna Kim Avatar'
+        about='left the group '
+        destiny='Chess Club '
+        time='2 weeks ago'
+      />
+    </div>
+  );
+};
+
+export default CardAvatar;
